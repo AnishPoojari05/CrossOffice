@@ -1,0 +1,11 @@
+Q. Create Table Person_1 and keep id --column as primary key and default value..
+Query: 
+CREATE TABLE person_1(id int primary key default nextval('per_1'), first_name varchar(20) not null, last_name varchar(20) not null, address_1 varchar(30), 
+address_2 varchar(30), city varchar(20), states varchar(20));
+insert into person_1( first_name, last_name, address_1, address_2, city, states)values('Anish', 'Poojari', 'Juhu galli', 'Andheri', 'Mumbai', 'Maharashtra'),
+('danish', 'Khan', 'Mecca masjid', 'Andheri', 'Mumbai', 'Maharashtra'),('Jay', 'Oza', 'Villa', 'Vile-Parle', 'Mumbai', 'Maharashtra');
+select * from person_1;
+insert into person_1( first_name, last_name, address_1, address_2, city, states)values('Afzal', 'Khan', 'Park', 'Santacruz', 'Mumbai', 'Maharashtra'),
+('Faisal', 'Khan', 'Dargah', 'Andheri', 'Mumbai', 'Maharashtra'),('Anuradha', 'Dhangar', 'Juhu Galli', 'Andheri', 'Mumbai', 'Maharashtra'),
+('Ritu', 'Kolati', 'Building', 'Andheri', 'Mumbai', 'Maharashtra'),('Arbaz', 'Khan', 'Saki naka', 'Andheri', 'Mumbai', 'Maharashtra'),
+('Sundeep', 'Jogi', 'Neredgam', null, 'Makthal', 'Telengana'),('Akash', 'Naik', 'Metha Baba Chwal', 'Andheri', 'Mumbai', 'Maharashtra');
