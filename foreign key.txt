@@ -1,0 +1,25 @@
+--Method 1
+create table person_2 (id int primary key default (nextval('per_1')), first_name varchar(20), last_name varchar(20), address_id int);
+insert into person_2(first_name, last_name, address_id) values('Anish', 'Poojari', 2001),('Danish', 'Khan', 2002),('Faisal', 'khan', 2003);
+select * from person_2;
+drop table person_2;
+
+create table address1(id int primary key default (nextval('add_1')), address_1 varchar(30), address_2 varchar(30), city varchar(20), state varchar(20), zip_code bigint);
+insert into address1(address_1, address_2, city, state, zip_code) values('Juhu', 'Andheri', 'Mumbai','Maharashtra', 400058),('Taskhkent','Andheri', 'Mumbai', 'Maharashtra', 400017),('Ektha', 'Andheri', 'Mumbai', 'Maharashtra',400056);
+select * from address1;
+drop table address1;
+
+select * from person_2 left join address1 on person_2.address_id=address1.id;
+alter table person_2 add constraint fk_1 foreign key (address_id)references address1(id); 
+
+--Method 3  Foreign key 
+--table 1
+create table person_fk(id int primary key default (nextval('per_3')), first_name varchar(20), last_name varchar(20), address_id int, constraint fk_1 foreign key (address_id) references address_fk(id));
+insert into person_fk(first_name, last_name, address_id) values('A', 'A1', 1001),('B','B1', 1002),('C','C1',1003),('D','D1',1004);
+select * from person_fk;
+drop table person_fk;
+
+create table address_fk(id int primary key default(nextval('add_3')), address1 varchar(30), address2 varchar(30), city varchar(20), state varchar(20), zipcode bigint);
+insert into address_fk(address1, address2, city, state, zipcode)values('A01','A02','Mumbai','Maharashtra', 400058),('B01','B02','nagpur','Maharashtra',400069),('C01','C02','makthal','telengana',501208),('D01','D02','raichur','telengana',50987);
+select * from address_fk;
+drop table address_fk;
