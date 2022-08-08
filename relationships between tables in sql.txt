@@ -1,0 +1,24 @@
+--one to one
+create table person1(id int primary key, first_name varchar(20), last_name varchar(20));
+insert into person1(id, first_name, last_name) values(1001, 'Anish', 'Poojari'),(1002, 'Jay', 'Oza'),(1003,'Danish','Khan'),(1004, 'Faisu', 'Shaikh'),(1005, 'Akash','Naik');
+select * from person1;
+drop table person1;
+
+create table address1(id int primary key, address_1 varchar(30), address_2 varchar(30),city varchar(30), state varchar(30), zip_code int, person_id int , foreign key(person_id) references person1(id));
+insert into address1(id, address_1, address_2, city, state, zip_code)values(2001,'A1','A2','Mumbai','Maharashtra',400058),(2002,'B1','B2','Mumbai','Maharashtra',400017),(2003, 'C1','C2','Mumbai','Maharashtra',500019),(2004, 'D1','D2','Mumbai','Maharashtra',500047);
+select * from address1;
+drop table address1;
+select * from person1 inner join address1 on person1.id=address1.id;
+
+--one to many
+create table person3(id int, first_name varchar(20), last_name varchar(20), primary key (id));
+create table address3 (id int primary key, address_1 varchar(30), address_2 varchar(20), city varchar(20), state varchar(20), zip_code int, foreign key(id) references person3(id));
+
+--many to one
+create table address4 (id int primary key, address_1 varchar(30), address_2 varchar(20), city varchar(20), state varchar(20), zip_code int);
+create table person4(id int, first_name varchar(20), last_name varchar(20), address_id int , foreign key(address_id) references address4(id));
+
+--many to many 
+create table person2(id int, first_name varchar(20), last_name varchar(20), primary key(id));
+create table address2(id int primary key, address_1 varchar(30), address_2 varchar(30),city varchar(30), state varchar(30), zip_code int);
+create table person_address(id int primary key default nextval('person_address_seq_id'), person_id int, address_id int, foreign key(person_id) references person2(id), foreign key (address_id) references address2(id));
