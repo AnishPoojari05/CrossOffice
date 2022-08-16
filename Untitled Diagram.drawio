@@ -1,1 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2022-08-16T06:38:26.808Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" version="20.2.4" etag="h5LEcBbsyCVBY1-QuS3w" type="github"><diagram id="5X0ANyZioG8ZbqAFxfD2">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-08-16T07:02:34.682Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aNiJrOqyY5HgHFJCfq1W" version="20.2.4" type="github">
+  <diagram id="5X0ANyZioG8ZbqAFxfD2" name="Snake and Ladder Game">
+    <mxGraphModel dx="868" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DHISC-IBbHMv9imj3FbV-1" value="Players" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-2" value="Play game" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-3" value="Ladder" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-4" value="Check score" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-5" value="Winner" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-6" value="Update score" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-7" value="Throw dice" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-8" value="Snake" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="330" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-9" value="Register" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="DHISC-IBbHMv9imj3FbV-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="230" as="sourcePoint" />
+            <mxPoint x="130" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.233;entryY=0.963;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-8" target="DHISC-IBbHMv9imj3FbV-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="340" as="sourcePoint" />
+            <mxPoint x="320" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-2" target="DHISC-IBbHMv9imj3FbV-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.767;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.292;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-2" target="DHISC-IBbHMv9imj3FbV-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="200" as="sourcePoint" />
+            <mxPoint x="410" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.058;entryY=0.738;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.983;exitY=0.375;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-2" target="DHISC-IBbHMv9imj3FbV-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="240" as="sourcePoint" />
+            <mxPoint x="480" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-4" target="DHISC-IBbHMv9imj3FbV-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="320" as="sourcePoint" />
+            <mxPoint x="580" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.967;exitY=0.275;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.267;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-4" target="DHISC-IBbHMv9imj3FbV-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="320" as="sourcePoint" />
+            <mxPoint x="750" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.617;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="370" as="sourcePoint" />
+            <mxPoint x="660" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DHISC-IBbHMv9imj3FbV-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.833;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DHISC-IBbHMv9imj3FbV-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="275" as="sourcePoint" />
+            <mxPoint x="310" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
